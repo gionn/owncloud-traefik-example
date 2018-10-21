@@ -79,6 +79,7 @@ services:
 
   reverse-proxy:
     image: traefik  # The official Traefik docker image
+    restart: always
     command: --api --docker -c /etc/traefik.toml
     ports:
       - "80:80"      # The HTTP port
