@@ -78,7 +78,7 @@ services:
       - "traefik.enable=false"
 
   reverse-proxy:
-    image: traefik
+    image: traefik:v1.7
     restart: always
     command: --api --docker -c /etc/traefik.toml
     ports:
